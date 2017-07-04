@@ -1,0 +1,18 @@
+{
+    "name": "sidfate/helpers",
+    "description": "some common and useful helpers",
+    "keywords": ["helper"],
+    "homepage": "https://github.com/Sidfate/fsm",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+		{
+			"name": "Sidfate",
+			"email": "sidfate@163.com",
+			"homepage": "https://sidfate.com"
+		}
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
