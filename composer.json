@@ -2,7 +2,7 @@
     "name": "sidfate/helpers",
     "description": "some common and useful helpers",
     "keywords": ["helper"],
-    "homepage": "https://github.com/Sidfate/fsm",
+    "homepage": "https://github.com/Sidfate/helpers",
     "license": "MIT",
     "version": "1.0.0",
     "authors": [
@@ -17,5 +17,5 @@
     },
     "autoload": {
         "psr-4": {"Helpers\\": "src/Helpers"}
-    },
+    }
 }
