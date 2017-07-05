@@ -1,6 +1,6 @@
 <?php 
 
-namespace Sidfate\Helper;
+namespace Sidfate\Helpers;
 
 /**
  * Verification class in Chinese conditions
