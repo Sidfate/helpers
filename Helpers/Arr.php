@@ -72,6 +72,11 @@ class Arr
 		return $newArr;
 	}
 
+	public static function rand(array $arr)
+	{
+		
+	}
+
 	/**
 	 * Array recursion.
 	 * @param  $arr
