@@ -1,6 +1,6 @@
 <?php 
 
-namespace Sidfate\Helpers;
+namespace Helpers;
 
 class Arr 
 {
