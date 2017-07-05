@@ -10,10 +10,10 @@ class Arr
 	 * @param  $arr
 	 * @return mixed|null
 	 */
-	public static function fisrt(array $arr)
+	public static function first(array $arr)
 	{
-		if(count($arr) === 0) return null;
-		return array_values($arr)[0];
+		if(empty($arr)) return null;
+		return reset($arr);
 	}
 
 	/**
@@ -23,8 +23,8 @@ class Arr
 	 */
 	public static function last(array $arr)
 	{
-		if(count($arr) === 0) return null;
-		return array_values($arr)[count($arr) - 1];
+		if(empty($arr)) return null;
+		return end($arr);
 	}
 
 	/**
@@ -36,6 +36,7 @@ class Arr
 	 */
 	public static function get(array $arr, $key, $default = null)
 	{
+		$arr = self::flat($arr);
 		if(is_array($arr) && isset($arr[$key])) {
             return $arr[$key];
         }
@@ -72,9 +73,22 @@ class Arr
 		return $newArr;
 	}
 
-	public static function rand(array $arr)
+	/**
+	 * Pluck the given key's value from a two-dimensional array
+	 * @param  $arr
+	 * @param  $key
+	 * @return array
+	 */
+	public static function pluck(array $arr, $key)
 	{
-		
+		$newArr = [];
+		foreach ($arr as $value) {
+			if(is_array($value) && isset($value[$key])) {
+				$newArr[] = $value[$key];
+			}
+		}
+
+		return $newArr;
 	}
 
 	/**
