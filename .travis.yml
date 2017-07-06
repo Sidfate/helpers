@@ -9,8 +9,8 @@ php:
   - '7.1.0alpha1'
   - hhvm
 
-inttall:
-  - composer install --no-dev --quiet
+before_script:
+  - composer install
 
 script:
   phpunit -c phpunit.xml.dist
