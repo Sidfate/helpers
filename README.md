@@ -1,4 +1,4 @@
-# Helpers
+# Helpers [![Build Status](https://travis-ci.org/Sidfate/helpers.svg?branch=master)](https://travis-ci.org/Sidfate/helpers)
 Some common and useful helpers in PHP
  
 # Install
