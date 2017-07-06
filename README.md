@@ -2,7 +2,10 @@
 Some common and useful helpers in PHP
  
 # Install
-`composer require sidfate/helpers`
+```
+composer require sidfate/helpers
+composer require sidfate/helpers:dev-master  
+```
 
 # Usage
 
@@ -10,6 +13,8 @@ Some common and useful helpers in PHP
 array functions.
 
 ```
+use Helpers\Arr;
+
 // Get the first value.
 Arr::first(array $arr);
 
@@ -33,6 +38,8 @@ Arr::pluck(array $arr, $key);
 string functions.
 
 ```
+use Helpers\Str;
+
 // Change the str to camel case.
 Str::camel($str);
 
@@ -44,6 +51,8 @@ Str::limit($str, $length=50, $end="...");
 verification functions.
 
 ```
+use Helpers\Verify;
+
 // Verify is a valid email address
 Verify::isEmail($email)
 
