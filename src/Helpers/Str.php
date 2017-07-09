@@ -15,11 +15,6 @@ class Str
         return lcfirst(str_replace(' ', '', $value));
     }
 
-    public static function random() 
-    {
-
-    }
-
     /**
      * Get the limited str
      * @param  $str    
