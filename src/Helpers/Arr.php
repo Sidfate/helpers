@@ -51,7 +51,7 @@ class Arr
 	 */
 	public static function toObject(array $arr)
 	{
-		$obj = new StdClass();
+		$obj = new \StdClass();
 		foreach ($arr as $key => $value) {
 			$obj->$key = $value;
 		}
