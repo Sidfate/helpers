@@ -62,3 +62,6 @@ Verify::isIp($ip)
 // Verify is a valid url
 Verify::isUrl($url)
 ```
+
+# License
+MIT
