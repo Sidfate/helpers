@@ -63,5 +63,18 @@ Verify::isIp($ip)
 Verify::isUrl($url)
 ```
 
+### Http
+http functions.
+
+```
+use Helpers\Http;
+
+// Get all HTTP headers
+Http::getHeaders();
+
+// Get the header value
+Http::getHeader($key);
+```
+
 # License
 MIT
