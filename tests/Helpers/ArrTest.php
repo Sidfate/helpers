@@ -75,4 +75,17 @@ class ArrTest extends \PHPUnit_Framework_TestCase
 
     	$this->assertEquals($b, Arr::pluck($a, 'name'));
     }
+
+    public function TestValueInArray()
+    {
+        $a = [
+            1,
+            'a',
+            [2, 3]
+        ];
+
+        $this->assertTrue(Arr::in(1, $a));
+        $this->assertEquals(2, Arr::in('a', $a, true));
+        $this->assertTrue(Arr::in([2, 3], $a, true));
+    }
 }

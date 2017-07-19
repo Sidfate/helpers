@@ -109,7 +109,30 @@ class Arr
 				array_pop($fkey);
 			}
 		}
+
 		$fkey = [];
+	}
+
+	/**
+	 * Check if the given value exists in an array
+	 * @param  $value
+	 * @param  $arr
+	 * @param  $returnKey
+	 * @return mixed|null
+	 */
+	public static function in($value, array $arr, $returnKey=false)
+	{
+		$existValue = in_array($value, $arr, true);
+
+		if($returnKey) {
+			if($existValue) {
+				return array_search($value, $arr, true);
+			}
+
+			return null;
+		}
+
+		return $existValue;
 	}
 	
 }
